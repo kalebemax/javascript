@@ -8,7 +8,7 @@
         body {
             background-color: darkblue;
             color: white;
-            font: normal 18pt Arial;
+            font: normal 15pt Arial;
         }
     </style>
 </head>
@@ -16,9 +16,16 @@
     <h1>Iniciando estudos com DOM</h1>
     <p>Aqui vai o resultado</p>
     <p>Aprendendo a usar <strong>DOM</strong> em JavaScript</p>
-    <div>Clique em mim</div>
+    <div class="user">Clique em mim</div>
     <script>
-
+        var show = document.getElementsByTagName('p')[0]
+        document.write('Assim está escrito: ' + show.innerHTML)
+      
+        var screen = document.body
+        screen.style.background = 'black'
+      
+        var select = document.querySelector('.user')
+       select.style.color = 'brown'
     </script>
 </body>
 </html>
