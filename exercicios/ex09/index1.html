@@ -4,6 +4,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Passaporte</title>
+    <style>
+        body {
+             font-size: 1.1em;
+             font-family: Arial, Helvetica, sans-serif;
+        }
+     </style>
 </head>
 <body>
     <h1>Nacionalidade</h1>
@@ -16,10 +22,11 @@
         function verificar() {
             var text = document.querySelector('#txt')
             var text2 = document.querySelector('.res')
-            if (text == 'Brasil')
-            text2.innerHTML = `<p>Você mora em ${text}! </p> Você é brasileiro!`
+            var country = (text.value)
+            if (country == 'Brasil')
+            text2.innerHTML = `<p>Você mora em <strong>${country}</strong>! </p> Você é brasileiro!`
             else {
-                text2.innerHTML = `Você mora em ${text}! Você é estrangeiro!`
+                text2.innerHTML = `<p>Você mora em <strong>${country}</strong>! </p> Você é estrangeiro!`
             }
         }
     </script>
