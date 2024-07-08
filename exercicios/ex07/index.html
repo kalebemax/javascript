@@ -20,7 +20,27 @@
         Interaja...
     </div>
     <script>
-        
+        var clik = document.querySelector('.area')
+
+        clik.addEventListener('click', clicar)
+        clik.addEventListener('mouseenter', entrar)
+        clik.addEventListener('mouseout', sair)
+
+        function clicar() {
+            clik.innerHTML = 'clicou!'
+            clik.style.background = 'black'
+            clik.style.color = 'white'
+        }
+
+        function entrar() {
+            clik.innerHTML = 'entrou!'
+        }
+
+        function sair() {
+            clik.innerHTML = 'saiu!'
+            clik.style.background = 'darkgray'
+            clik.style.color = 'black'
+        }
     </script>
 </body>
 </html>
