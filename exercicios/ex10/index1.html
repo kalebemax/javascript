@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Passaporte</title>
+</head>
+<body>
+    <h1>Nacionalidade</h1>
+     Local de Residência: <input type="text" name="txt" id="txt" maxlength="20">
+    <input type="button" value="Verificar" onclick="verificar()">
+    <div class="res">
+
+    </div>
+    <script>
+        function verificar() {
+            var text = document.querySelector('#txt')
+            var text2 = document.querySelector('.res')
+            if (text == 'Brasil')
+            text2.innerHTML = `<p>Você mora em ${text}! </p> Você é brasileiro!`
+            else {
+                text2.innerHTML = `Você mora em ${text}! Você é estrangeiro!`
+            }
+        }
+    </script>
+</body>
+</html>
