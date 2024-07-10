@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Verificador de Idade</title>
+    <title>Verificador</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -13,17 +13,17 @@
     <section>
         <div>
             
-             <p><label for="num">Ano de Nascimento: <input type="number" name="num" id="num" max="2024" required></label></p>
+             <p><label for="num">Ano de Nascimento: <input type="number" name="ano" id="num" autocomplete="on"></label></p>
              
-              <p> Sexo: <label for="sx"><input type="checkbox" name="sx" id="sx"> Masculino</label>
-                 <label for="fem"> <input type="checkbox" name="fem" id="fem"> Feminino</label>
+              <p> Sexo: <label for="sx"> <input type="radio" name="sx" id="sx" checked> Masculino</label>
+                 <label for="fem"> <input type="radio" name="sx" id="fem"> Feminino</label>
              </p>
              
-             <p><input type="button" value="Verificar"></p>
+             <p><input type="button" value="Verificar" onclick="verificar()"></p>
 
         </div>
-        <div class="img">
-            <img src="" alt="">
+        <div id="res">
+            Preencha os dados acima para ver o resultado!
         </div>
     </section>
     <footer>
