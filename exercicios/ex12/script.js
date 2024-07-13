@@ -8,7 +8,6 @@ function contar() {
     var res2 = Number(pass.value)
 
     if (res2 <= 0) {
-        alert('Passo inválido! Considerando Passo 1')
         res2 = 1
     }
 
